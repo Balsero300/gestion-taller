@@ -9,7 +9,7 @@ const stack = createStackNavigator()
 import Usuarios from './screen/Usuario';
 import Registros from './screen/Registro';
 
-function myStack() {
+function MyStack() {
   return (
     <Stack.Navigation>
       <Stack.screen name="Registros" component={Usuarios} />
@@ -20,7 +20,7 @@ function myStack() {
 export default function App() {
   return (
     <NavigationContainer>
-
+      <MyStack/>
     </NavigationContainer>
   );
 }
