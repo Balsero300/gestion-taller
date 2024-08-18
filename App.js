@@ -3,12 +3,17 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
+
 const stack = createStackNavigator()
+
+import Usuarios from './screen/Usuario';
+import Registros from './screen/Registro';
 
 function myStack() {
   return (
     <Stack.Navigation>
-      <Stack.screen/>
+      <Stack.screen component={Usuarios} />
+      <Stack.screen component={Registros} />
     </Stack.Navigation>
   )
 }
