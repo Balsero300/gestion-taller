@@ -12,8 +12,8 @@ import Registros from './screen/Registro';
 function myStack() {
   return (
     <Stack.Navigation>
-      <Stack.screen component={Usuarios} />
-      <Stack.screen component={Registros} />
+      <Stack.screen name="Registros" component={Usuarios} />
+      <Stack.screen name="Usuarios" component={Registros} />
     </Stack.Navigation>
   )
 }
